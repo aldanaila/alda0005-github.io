@@ -1,0 +1,71 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    background: beige;
+    
+}
+body {
+    font-family: "Sedan", serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.wrapper > * {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    flex: 1 100%;
+}
+
+header {
+    background:cornflowerblue;
+    height: 90px;
+}
+
+.nav {
+    background:darkolivegreen;
+    height: 80px;
+}
+
+.footer {
+    background: darkolivegreen;
+    height: 150px;
+}
+
+.main {
+    background:darkslategrey;
+    height: auto;
+    padding: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+.aside {
+    background:darkslategray;
+    height: auto;
+}
+
+/* tampilkan rtesponsive */
+@media all and (min-width: 800px) {
+    .main {
+        flex: 2;
+    }
+    .aside1 {
+        order: 2;
+    }
+    .main {
+        order: 1;
+    }
+    .footer {
+        order: 4;
+    }
+}
+@media all and (min-width: 600px) {
+    .aside1 {
+        flex: 1;
+    }
+}
